@@ -1,39 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="260" viewBox="0 0 820 260" role="img" aria-label="Terminal animation">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" role="img" aria-label="Terminal animation">
   <style>
-    .bg { fill: #0d1117; stroke: #1f2a37; stroke-width: 2; }
-    .bar { fill: #161b22; }
-    text { font-family: 'Fira Code', 'SFMono-Regular', Consolas, monospace; font-size: 15px; }
+    .bg { fill: #05080a; stroke: #00ff9c; stroke-opacity: .4; stroke-width: 1.5; }
+    .bar { fill: #0d1117; }
+    text { font-family: 'Fira Code', 'SFMono-Regular', Consolas, monospace; font-size: 14px; }
     .p { fill: #00ff9c; }
+    .m { fill: #ff0055; }
     .c { fill: #c9d1d9; }
     .d { fill: #6e7681; }
     .l { opacity: 0; animation: show 0.01s forwards; }
-    .l1 { animation-delay: 0.4s; }
-    .l2 { animation-delay: 1.4s; }
-    .l3 { animation-delay: 2.2s; }
-    .l4 { animation-delay: 3.0s; }
-    .l5 { animation-delay: 3.8s; }
-    .l6 { animation-delay: 4.8s; }
-    .l7 { animation-delay: 5.6s; }
-    .cur { animation: blink 1s steps(1) infinite; animation-delay: 5.6s; opacity: 0; }
+    .l1 { animation-delay: 0.4s; } .l2 { animation-delay: 1.3s; } .l3 { animation-delay: 2.0s; }
+    .l4 { animation-delay: 2.7s; } .l5 { animation-delay: 3.4s; } .l6 { animation-delay: 4.1s; }
+    .l7 { animation-delay: 5.0s; } .l8 { animation-delay: 5.8s; } .l9 { animation-delay: 6.5s; }
+    .cur { opacity: 0; animation: blink 1s steps(1) infinite; animation-delay: 6.5s; }
     @keyframes show { to { opacity: 1; } }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-    .scan { fill: #00ff9c; opacity: 0.05; animation: sweep 4s linear infinite; }
-    @keyframes sweep { from { transform: translateY(30px); } to { transform: translateY(260px); } }
+    .scan { fill: #00ff9c; opacity: 0.06; animation: sweep 4s linear infinite; }
+    @keyframes sweep { from { transform: translateY(30px); } to { transform: translateY(300px); } }
   </style>
-  <rect class="bg" x="1" y="1" width="818" height="258" rx="10"/>
-  <rect class="bar" x="1" y="1" width="818" height="30" rx="10"/>
-  <circle cx="22" cy="16" r="5" fill="#ff5f56"/>
-  <circle cx="42" cy="16" r="5" fill="#ffbd2e"/>
-  <circle cx="62" cy="16" r="5" fill="#27c93f"/>
-  <text x="340" y="21" class="d" style="font-size:12px">marcus@lab: ~</text>
+  <rect class="bg" x="1" y="1" width="818" height="298" rx="8"/>
+  <rect class="bar" x="1" y="1" width="818" height="28" rx="8"/>
+  <circle cx="20" cy="15" r="5" fill="#ff5f56"/><circle cx="40" cy="15" r="5" fill="#ffbd2e"/><circle cx="60" cy="15" r="5" fill="#27c93f"/>
+  <text x="330" y="19" class="d" style="font-size:12px">ghost@lab: ~/recon</text>
   <rect class="scan" x="2" y="0" width="816" height="14"/>
 
-  <g class="l l1"><text x="24" y="62"><tspan class="p">marcus@lab</tspan><tspan class="c">:~$ whoami</tspan></text></g>
-  <g class="l l2"><text x="24" y="86" class="c">software engineering student | cyber defense</text></g>
-  <g class="l l3"><text x="24" y="116"><tspan class="p">marcus@lab</tspan><tspan class="c">:~$ cat focus.txt</tspan></text></g>
-  <g class="l l4"><text x="24" y="140" class="c">[+] penetration testing methodology (authorized scope only)</text></g>
-  <g class="l l5"><text x="24" y="162" class="c">[+] linux hardening / active directory security / powershell</text></g>
-  <g class="l l6"><text x="24" y="192"><tspan class="p">marcus@lab</tspan><tspan class="c">:~$ echo $ETHICS</tspan></text></g>
-  <g class="l l7"><text x="24" y="216" class="c">authorization first. document everything. disclose responsibly.</text></g>
-  <rect class="cur" x="24" y="226" width="9" height="16" fill="#00ff9c"/>
+  <g class="l l1"><text x="22" y="58"><tspan class="p">ghost@lab</tspan><tspan class="c">:~$ ./identity --show</tspan></text></g>
+  <g class="l l2"><text x="22" y="80" class="c">[ok] role ........ ethical hacker / cyber defense student</text></g>
+  <g class="l l3"><text x="22" y="100" class="c">[ok] stack ....... linux | active directory | powershell | java | js</text></g>
+  <g class="l l4"><text x="22" y="120" class="c">[ok] distros ..... kali | parrot | windows server</text></g>
+  <g class="l l5"><text x="22" y="148"><tspan class="p">ghost@lab</tspan><tspan class="c">:~$ nmap --scope authorized.txt</tspan></text></g>
+  <g class="l l6"><text x="22" y="170" class="c">[+] scope verified. rules of engagement signed.</text></g>
+  <g class="l l7"><text x="22" y="198"><tspan class="p">ghost@lab</tspan><tspan class="c">:~$ cat /etc/creed</tspan></text></g>
+  <g class="l l8"><text x="22" y="220" class="m">authorization first. stay in scope. leave no damage.</text></g>
+  <g class="l l9"><text x="22" y="242" class="m">document everything. disclose responsibly.</text></g>
+  <rect class="cur" x="22" y="256" width="9" height="15" fill="#00ff9c"/>
 </svg>
